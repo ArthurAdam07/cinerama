@@ -13,13 +13,13 @@ class AddFilmes extends Migration
      */
     public function up()
     {
-        Schema::table('filmes', function (Blueprint $table) {
+        Schema::create('filmes', function (Blueprint $table) {
             $table->increments('id');           //código identificador
             $table->string('title');            //título do filme
             $table->string('synopsis');      //sinopse da filme
-            $table->dateTime('scheduledto');    //lançamento
             $table->integer('note');         //guarda o id de quem cadastra a ativ.
             $table->string('datasheet');     //ficha técnica
+            $table->dateTime('scheduledto');    //lançamento
             $table->timestamps();               //registro created_at e updated_at
         });
     }
