@@ -1,8 +1,8 @@
 <meta charset="utf-8">
-<meta name="description" content="Sistema de gerenciamento de Notas">
-<meta name="author" content="Tiago">
+<meta name="description" content="Cinerama">
+<meta name="author" content="Amigos e Allan">
 
-<title>Gerenciador de Notas</title>
+<title>Cinerama</title>
 
 <!-- load fontwesome -->
 <script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>

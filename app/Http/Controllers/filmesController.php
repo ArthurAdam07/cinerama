@@ -119,7 +119,7 @@ class filmesController extends Controller
         $messages = array(
             'title.required' => 'É obrigatório um título para a filmes',
             'synopsis.required' => 'É obrigatória uma descrição para a filmes',
-            'scheduledto.required' => 'É obrigatório o cadastro da data/hora da filmes',
+            'scheduledto.required' => 'É obrigatório o cadastro da data/hora dos filmes',
         );
         //vetor com as especificações de validações
         $regras = array(
@@ -143,7 +143,7 @@ class filmesController extends Controller
         $obj_filmes->scheduledto = $request['scheduledto'];
         $obj_filmes->id     = Auth::id();
         $obj_filmes->save();
-        return redirect('/filmes')->with('success', 'Filme criado com sucesso!!');
+        return redirect('/filmes')->with('success', 'Filme cadastrado com sucesso!!');
     }
     /**
      * Show the form for deleting the specified resource.
